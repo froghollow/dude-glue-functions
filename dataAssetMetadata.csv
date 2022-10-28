@@ -1,0 +1,17 @@
+﻿Common Name,Metadata Field Name,Data Type,Allowed Values,Null allowed?,
+Asset Name,table_name,text,Name of the data asset that contains the field,No,
+Field Name,field_name,text,Name of the field as it occurs in the data asset’s database,No,
+Summary,short_description,text,A summary of the field’s purpose,No,
+Long Description,long_description,text,A detailed description of the field’s purpose,No,
+Data Type,data_type,text,"“text”, “integer”, “decimal”, “Boolean”, “money”, “timestamp (with time zone)”, “timestamp (without time zone)”, “date”, “interval”, “enum”, “point_geom”, “line_geom”, “polygon_geom”, “json”, “jsonb”, “array”, “xml”, “bytea” [i.e., blob; can
+include audio, image, and other binary formats]",No,
+Primary/Foreign Key?,key_type,text,"“Primary” “Foreign”, “Not a key”",No,
+GEM System ID,gem_id,integer,The unique ID of the GEM System that hosts the containing data asset,Yes,
+"GEM System Name
+Other System Name",gem_system_name other_system_name,Text Text,"Short Name of the system as identified in the GEM System module
+If the system does not exist in the GEM System module, then provide the system name",Yes Yes,
+Maximum Length,max_length,integer,"An integer (e.g., 50, 255) that designates the",No,
+Null Allowed?,null_allowed,Boolean,1 or 0,No,
+Required Field?,is_required,Boolean,1 or 0,No,
+Allowed Values,values_allowed,text,"A list of the possible values for the field. If the list is continuous or unconstrained (e.g., a text field or an integer with no upper bound), then a sample value or two should be
+provided.",Yes,
